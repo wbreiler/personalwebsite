@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name - Portfolio",
-  description: "Personal portfolio showcasing my work and experience",
+  title: "Will Breiler - Portfolio",
+  description: "Personal portfolio showcasing my software development work and experience",
 };
 
 const navItems = [
@@ -23,18 +23,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b z-50">
+      <body className={`${inter.className} bg-gray-900 text-white`}>
+        <nav className="fixed top-0 w-full bg-gray-900/80 backdrop-blur-sm border-b border-gray-800 z-50">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
-              <a href="/" className="text-xl font-bold">Your Name</a>
+              <a href="/" className="text-xl font-bold text-white">Will Breiler</a>
               <div className="hidden sm:block">
                 <div className="flex space-x-8">
                   {navItems.map((item) => (
                     <a
                       key={item.name}
                       href={item.path}
-                      className="text-gray-600 hover:text-gray-900 transition-colors"
+                      className="text-gray-300 hover:text-white transition-colors"
                     >
                       {item.name}
                     </a>
